@@ -1,0 +1,27 @@
+#include <stdio.h>
+//menu driven program for simple calculation
+int main() {
+    int num1,num2,opt;
+    printf("Input two intergers: ");
+    scanf("%d%d",&num1,&num2);
+    printf("Input your option: \n");
+     scanf("%d",&opt);
+    printf("1-Addition\n2-Substitution\n3-Multipication\n4-Division\n5-exit\n");
+   
+    switch(opt){
+        case 1 : printf("The Addition of %d and %d is= %d\n",num1,num2,num1+num2);
+           break;
+        case 2 : printf("The Substitution of %d and %d is= %d\n",num1,num2,num1-num2);
+           break;  
+      case 3 : printf("The Multiplication of %d and %d is= %d\n",num1,num2,num1*num2);
+           break;
+      case 4 : if(num2==0){
+          printf("The second integer is zero.divided by zero.\n");
+      } else{
+      printf("The Division of %d and %d is= %d\n",num1,num2,num1/num2); }
+           break;
+    case 5 : 
+           break;
+    }
+   return 0;
+}
