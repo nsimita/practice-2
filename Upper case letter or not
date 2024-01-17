@@ -4,13 +4,13 @@ char ch;
 printf("Enter the character: );
 scanf("%c",&ch);
 if(ch>='A' && ch<='Z'){
-printf("Upper case");
+  printf("Upper case");
 }
 else if (ch>='a' && ch<='z'){
-printf("Lower case");
+  printf("Lower case");
 }
 else{
-printf("Not English");
+  printf("Not English");
 }
 return 0;
 }
