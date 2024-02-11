@@ -1,0 +1,11 @@
+#include <stdio.h>
+//while loop 
+int main() {
+    int i= 1; //declaration 
+      while (i<=10)  { //condition
+          printf("Best is yet to come\n"); //what to print
+          i++; //updation
+      }
+
+    return 0;
+}
