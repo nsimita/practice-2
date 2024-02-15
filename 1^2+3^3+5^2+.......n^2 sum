@@ -1,0 +1,13 @@
+#include <stdio.h>
+//1^2+3^3+5^2+.......n^2 sum
+int main() {
+    int n,sum;
+   
+    scanf("%d",&n);
+     sum=0;
+   for(int i=1;i<=n;i=i+2){
+      sum=sum+i*i;
+    }
+ printf("%d\n",sum );
+    return 0;
+}
