@@ -4,7 +4,7 @@ int main() {
     int n; 
    scanf("%d",&n);
    int flag = 1; //at the beginning we declared flag=1
-   for(int i=2; i<n-1 ; i++) // i<n loop will start from 2 and it will stop at n-1th time or before 'n'{
+   for(int i=2; i<n-1 ; i++) // i<n or n/2 loop will start from 2 and it will stop at n-1th time or before 'n'{
        if(n%i ==0){
            flag = 0; //if any i  can be divided by n then the flag will be 0
            break; // if any number can be divisible loop will stop
