@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n; 
+   scanf("%d",&n);
+   int flag = 1; //at the beginning we declared flag=1
+   for(int i=2; i<n-1 ; i++) // i<n loop will start from 2 and it will stop at n-1th time or before 'n'{
+       if(n%i ==0){
+           flag = 0; //if any i  can be divided by n then the flag will be 0
+           break; // if any number can be divisible loop will stop
+       }  
+       //reason of using flag we want to check if the value of flag is unchanged or not. if it's unchanged then it's prime. 
+   }
+       if(flag == 1) // if flag is 1 that means there is any number which can't divide 'n'and it's prime number {
+           printf("Prime");
+       }
+       else {
+           printf("Not prime");
+       }
+   
+
+    return 0;
+}
