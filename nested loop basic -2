@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+   int i, j;
+   for(i=1; i<=5; i++) {
+       for( j=1; j<=3; j++){
+           printf("Hello i =%d j=%d\n",i, j);
+       }  // it will work 3 times under 5 times total = 15 times
+        printf("Hi i =%d j=%d\n",i, j);
+   } // it will work 5 times
+    printf("bye i =%d j=%d\n",i, j); // it will print just one time
+
+    return 0;
+}
