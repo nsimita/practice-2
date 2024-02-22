@@ -23,6 +23,7 @@ int main() {
         rem = max % min
     } */
     printf("GCD = %d", min);
+     printf("LCM = %d", (a*b)/min); /* LCM = (a*b)/GCD here GCD is the min */
 
     return 0;
 }
