@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    for(int i= 1; i<20; i++){
+        if (i%3==0)
+            continue;
+            printf("%d\n",i);
+        
+        if(i==10)
+            break; 
+        
+    }
+    /* 1 2 4 5 6 7 8 10 as 3,6,9 are divisible by 3 so they will pass the loop won't print as 10 is equal to 10 then the loop will stop as break is given there */
+
+    return 0;
+}
