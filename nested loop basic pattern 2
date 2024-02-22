@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int i,j;
+  for(i=1; i<=5; i++) // n=5, 5 lines{
+      for (j=1; j<=i ; j++) // the number of stars are equal to i{
+          printf("*");
+      }
+      printf("\n");
+  }
+
+    return 0;
+}
