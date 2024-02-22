@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,min, max, rem;
+    printf(" Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+    if (a>b){
+          max = a;
+          min =  b;
+    }
+    else{
+          max = b;
+         min = a;
+    } 
+    
+    while (max % min != 0){
+        rem = max % min ;
+        max = min;
+        min = rem; 
+    }
+    /* we can use for loop 
+    for(  ;max % min != 0; max = min, min = rem ){
+        rem = max % min
+    } */
+    printf("GCD = %d", min);
+
+    return 0;
+}
