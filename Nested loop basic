@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+   int i, j;
+   for(i=1; i<=5; i++){   // -> this part will work 5 times
+       for( j=1; j<=3; j++) // for each i value, j will work 3 times { 
+           printf("Hello i =%d j=%d\n",i, j);
+       }
+   }
+
+    return 0;
+}
