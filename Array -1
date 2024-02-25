@@ -11,3 +11,60 @@ int main() {
     printf("Phy =%d , Che = %d, Math = %d", marks[0], marks[1], marks[2]);
     return 0;
 }
+//
+#include <stdio.h>
+printing inputs with loop
+int main() {
+    int num[5];
+    int i;
+    for(i=0; i<=4;i++){
+        scanf("%d",&num[i]);
+    }
+    printf("printing inputs: ");
+    for (i=0; i<=4; i++){
+        printf("%d\n",num[i]);
+    }
+    return 0;
+}
+//
+//print reverse number
+int main() {
+    int num[5];
+    int i;
+    for(i=0; i<=4;i++){
+        scanf("%d",&num[i]);
+    }
+    printf("printing inputs: ");
+    for (i=0; i<=4; i++){
+        printf("%d\n",num[i]);
+    }
+    printf("reverse inputs: ");
+    for (i=4; i>=0; i--){
+        printf("%d\n",num[i]);
+    }
+    return 0;
+}
+//avg number
+#include <stdio.h>
+
+int main() {
+    int num[5], sum=0;
+    float avg ;
+    int i;
+    for(i=0; i<=4;i++){
+        scanf("%d",&num[i]);
+    }
+    printf("printing inputs: ");
+    for (i=0; i<=4; i++){
+        printf("%d\n",num[i]);
+    }
+   
+    for (i=0; i<=4; i++){
+      sum= sum+num[i];
+    }
+    avg = sum/ 5.0;
+//avg = (float) sum/5;
+    printf("avg is %.2f", avg);
+    return 0;
+}
+//get rid of garbage value
